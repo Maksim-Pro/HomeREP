@@ -1,44 +1,42 @@
 "use strict"
 
-function checkArray(arr, chet, unchet, Zero){
+function checkArray(arr) {
     //Счётчик для просмотра всех элементов массива
     let i;
     //Счётчики
-    chet = 0, unchet = 0, Zero = 0;
+    let even = 0, odd = 0, nought = 0;
     //Крутим цикл, рассматривая все элементы массива
-    for(i = 0; i < arr.length; i++) {
+    for (i = 0; i < arr.length; i++) {
         //Проверяем что маcсив состоит из чисел
-        if(typeof arr[i] === 'number'){
+        if (typeof arr[i] === 'number') {
             //Если да, то проверяем следующие условия
             //Если элемент массива нацело делиться на 2 без остатся, И елемент массива не равен нулю
-            if(arr[i] % 2 == 0 && arr[i] != 0){
+            if (arr[i] % 2 == 0 && arr[i] != 0) {
                 //То счётчик чётных чисел увеличивем на 1
-                chet++;
+                even++;
             }
             //Если элемент массива равен нулю
-            if(arr[i] == 0){
+            if (arr[i] == 0) {
                 //То счётчик нуля увеличиваем на 1
-                Zero++;
+                nought++;
             }
             //Если элемент массива делится на 2 с остатком
-            if(arr[i] % 2 != 0){
+            if (arr[i] % 2 != 0) {
                 //То счётчик нечётных чисел увеличиваем на 1
-                unchet++;
+                odd++;
             }
         }
     }
     //Возвращаем все полученные значение счётчиков
-    return {
-        chet, unchet, Zero
-    }
+    return [
+        "even: " + even, "odd: " + odd, "nought: " + nought
+    ]
 }
 //Создаём массив с любыми значениями
-let mass = [0, 2, 2, 'fwfwfwwf', null, 0, 777]; 
+let mass = [0, 2, 2, 'fwfwfwwf', null, 0, 777];
 //Выводим его в консоль браузера
 console.log(mass);
-//Создаём счётчики
-let ch = 0, unch = 0, zero = 0;
 //И объявляем нашу функцию с параметрами выше созданного массива и счётчиков
-checkArray(mass, ch, unch, zero);
+checkArray(mass);
 //Выводим в консоль полученные значения функции
-console.log(checkArray(mass, ch, unch, zero));
+console.log(checkArray(mass));

@@ -6,9 +6,9 @@ function maxValue(arr) {
     let max = 0;
 
     //Крутим цикл, проссматривая все значения массива
-    for(i = 0; i < arr.length; i++) {
+    for (i = 0; i < arr.length; i++) {
         //Если какой-то элемент больше максимального
-        if(arr[i] > max) {
+        if (arr[i] > max) {
             //То перменной max присвоим значение этого элемента 
             max = arr[i];
         }

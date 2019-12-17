@@ -2,9 +2,9 @@
 
 function checkInput(value) {
     //Если тип переданного аргумента равен string или же number, в зависимости от введённого типа
-    if(typeof value === 'string' || typeof value === 'number'){
+    if (typeof value === 'string' || typeof value === 'number') {
         //То мы просто возвращаем наш аргумент, заранее вычисляя его тип
-        return typeof value; 
+        return typeof value;
     }
     //Если аргумент не число/строка
     else {
