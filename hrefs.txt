@@ -2,3 +2,4 @@ http://bakhirev.biz/book/ - JS Book - Сюрреализм
 https://www.dropbox.com/sh/2mfw30tsijwo0ya/AAC7pfIcjotG2mqbG1Nt-X5Ga?dl=0
 https://learn.webpurple.net/externals/ - Task to JS
 https://idg.net.ua/blog/uchebnik-css - CSS BOOK
+https://printexx.ru/razrabotka-maketa/skachat-shablon-bukleta.html - CoralDrow Практика
